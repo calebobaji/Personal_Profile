@@ -1,40 +1,40 @@
-/* Reset margins and paddings for consistency */
+/* reset command */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Page background and font */
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #eaf6ff;  /* light blue */
+  background-color: #eaf6ff;  
   padding: 20px;
 }
 
-/* Main container spacing */
+
 .container {
   display: grid;
-  gap: 20px; /* space between top and bottom */
+  gap: 20px; 
 }
 
 /* ---------- TOP SECTION ---------- */
 .top {
   display: grid;
-  grid-template-columns: 150px 1fr; /* profile picture + about */
+  grid-template-columns: 150px 1fr; 
   align-items: center;
-  background-color: #aee1ff; /* box color */
+  background-color: #aee1ff;
   padding: 20px;
-  border-radius: 15px; /* rounded corners */
+  border-radius: 15px; 
 }
 
-/* Profile picture container */
+
 .profile-pic {
   width: 120px;
   height: 120px;
-  border: 3px solid #d63384; /* pink border */
-  border-radius: 50%; /* makes it circular */
-  overflow: hidden; /* hides image overflow */
+  border: 3px solid #d63384; 
+  border-radius: 50%; 
+  overflow: hidden; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +45,7 @@ body {
 .profile-pic img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* fills circle neatly */
+  object-fit: cover; 
 }
 
 /* Placeholder styling if image is missing */
@@ -56,7 +56,7 @@ body {
 
 /* About text */
 .about h2 {
-  color: #d63384; /* pink heading */
+  color: #d63384; 
   margin-bottom: 10px;
 }
 
@@ -68,7 +68,7 @@ body {
 /* ---------- BOTTOM SECTION ---------- */
 .bottom {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* two equal boxes */
+  grid-template-columns: 1fr 1fr; 
   gap: 20px;
 }
 
@@ -93,15 +93,15 @@ body {
 /* ---------- RESPONSIVENESS ---------- */
 @media (max-width: 768px) {
   .top {
-    grid-template-columns: 1fr; /* stack vertically */
+    grid-template-columns: 1fr; 
     text-align: center;
   }
   
   .profile-pic {
-    margin: 0 auto 15px; /* center image */
+    margin: 0 auto 15px; 
   }
   
   .bottom {
-    grid-template-columns: 1fr; /* stack boxes */
+    grid-template-columns: 1fr; 
   }
 }
